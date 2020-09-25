@@ -2,6 +2,7 @@
 from plaat import *
 from laulud import *
 from esitaja import *
+from menüü import loeAlbumid
 
 #küsin kas kasutaja soovib lisada albumit
 b = input("Kas soovid lisada vinüülplaatide nimekirja albumit? jah/ei ")
@@ -31,9 +32,11 @@ else:
     pass
 #küsin kas kasutaja soovib albumite nimekirja näha
 y = input("Kas soovid näha vinüülplaatide nimekirja? jah/ei ")
+if y == "jah":
+    loeAlbumid()
 
 
-fail = open("albumid.txt", encoding="UTF-8")
+fail = open("albumid", encoding="UTF-8")
 albumid = []
 
 #funktsioon, mis poolitab read, lisab esineja, aasta, laulu ja albumi loendisse,
