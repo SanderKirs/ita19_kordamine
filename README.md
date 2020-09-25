@@ -13,6 +13,6 @@ Programmi kasutamine on väga lihtne:</br>
 -Seejärel näitab programm soovitud otsingu loendit.</br>
 
 # Programmi kirjutasid
-Ruuben Jalasto</br>
-Sander Kirs</br>
-Kristian Kuiv</br>
+Ruuben Jalasto([Repo](https://github.com/Bonedew/ita19_kordamine))</br>
+Sander Kirs ([Repo](https://github.com/SanderKirs/ita19_kordamine))</br>
+Kristian Kuiv(**Repo puudub**)</br>
