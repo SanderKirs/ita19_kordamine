@@ -53,33 +53,33 @@ def albumiteKriipsud():
         if len(albumid) > 1:
             if albumid[-2] != albumid[-1]:
                 print()
-                print("--------------------------------------------")
+                print("===================================================")
                 print()
         print(esineja.esitajaNimi, album.plaadiNimi, aasta, laul.pealkiri)
 
-if y == "jah":
-    albumiteKriipsud()
+    if y == "jah":
+        albumiteKriipsud()
 
 #küsitakse kas kasutaja soovib otsida laulu
-else:
-    w = input("Kas soovid otsida laulu? jah/ei ")
+w = input("Kas soovid otsida laulu? jah/ei ")
 
 #positiivse vastuse korral küsitakse artisti või albumi nime, mida otsitakse.
 #negatiivse vastuse korral lõpetatakse tegevus ning pannakse fail kinni.
-    if w == "jah":
+if w == "jah":
 
-        for rida in fail:
-            albumid.append(rida)
 
-        nimi = input("Sisesta albumi või artisti nimi: ")
-        x = nimi.title()
+    for rida in fail:
+        albumid.append(rida)
 
-        for str in albumid:
-            if x in str:
-                print(str)
+    nimi = input("Sisesta albumi või artisti nimi: ")
+    x = nimi.title()
 
-    else:
-        print("Ei soovinud midagi!")
+    for str in albumid:
+        if x in str:
+            print(str)
+
+else:
+    print("Ei soovinud midagi!")
 
 
 fail.close()
