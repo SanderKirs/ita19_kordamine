@@ -4,6 +4,7 @@
 lihtsalt ja mugavalt laule ja albumeid lisada.
 
 # Kuidas programmi kasutada?
+**(Selleks, et faili avada, peab kasutama programmi, mis oskab pythonit lugeda)**
 
 Programmi kasutamine on väga lihtne:</br>
 -Kõigepealt küsib programm, kas kasutaja soovib lisada laulu. Seejärel on võimalik lisada albumi loendisse laule.</br>
