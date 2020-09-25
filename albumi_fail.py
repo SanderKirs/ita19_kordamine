@@ -1,5 +1,5 @@
 from laulu_fail import Laul
-
+#klassi Album loomine
 class Album:
     def __init__(self, pealkiri, aasta, artist):
         self.pealkiri = pealkiri

@@ -1,5 +1,5 @@
 class Laul:
-    #Klass  mis kijeldab laulu
+    #Klass  mis kirjeldab laulu
 
     #Omadused ja atribuudid:
         #pealkiri(Str) = Laulu peakiri
@@ -8,5 +8,5 @@ class Laul:
     def __init__(self, pealkiri, laulja):
         self.pealkiri = pealkiri
         self.laulja = laulja
-laul1 = Laul ("Für oksana", "Nublu")
-print (laul1.pealkiri,"-",laul1.laulja)
+laul1 = Laul ("Thrasher", "D.R.I")
+
