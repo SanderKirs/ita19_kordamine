@@ -1,5 +1,4 @@
-
-#Loeme albumite failist laulud,albumid ja nende aastad
+#funktsioon mis loeb albumite failist kõik vajaliku
 def loeAlbumid():
     järk = []
     with open("albumid", "rt") as f:

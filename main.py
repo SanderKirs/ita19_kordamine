@@ -1,11 +1,11 @@
-#impordin teistest failidest kõik vajaliku
+#imporditakse teistest failidest kõik vajaliku
 from plaat import Plaat
 from laulud import Laulud
 from esitaja import Esitaja
 from laul import Laul
 from menüü import loeAlbumid
 
-#küsin kas kasutaja soovib lisada albumit
+#küsitakse kas kasutaja soovib lisada albumit
 b = input("Kas soovid lisada vinüülplaatide nimekirja albumit? jah/ei ")
 
 #tsükkel, mis küsib lisatava albumi esitajat, albumit, aastat ja laulu
@@ -21,7 +21,7 @@ if b == "jah":
         laulupealkiri = grupp.esitajaNimi.title() + "\t" + album.plaadiNimi.title() + "\t" + aasta + "\t" + laul.lauluNimi.title()
         fail = open("albumid.txt", "a", encoding="UTF-8")
         fail.write("\n" + laulupealkiri)
-        #küsin kas soovitakse veel laule lisada
+        #küsitakse kas soovitakse veel laule lisada
         b = input("Kas soovite veel laule lisada? jah/ei")
         if b == "jah":
             seis = "aktiivne"
@@ -31,7 +31,7 @@ if b == "jah":
 
 else:
     pass
-#küsin kas kasutaja soovib albumite nimekirja näha
+#küsitakse kas kasutaja soovib albumite nimekirja näha
 y = input("Kas soovid näha vinüülplaatide nimekirja? jah/ei ")
 if y == "jah":
     loeAlbumid()
@@ -66,7 +66,6 @@ w = input("Kas soovid otsida laulu? jah/ei ")
 #positiivse vastuse korral küsitakse artisti või albumi nime, mida otsitakse.
 #negatiivse vastuse korral lõpetatakse tegevus ning pannakse fail kinni.
 if w == "jah":
-
 
     for rida in fail:
         albumid.append(rida)
