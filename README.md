@@ -6,6 +6,7 @@ lihtsalt ja mugavalt laule ja albumeid lisada.
 # Kuidas programmi kasutada?
 
 Programmi kasutamine on väga lihtne:
+
 -Kõigepealt küsib programm, kas kasutaja soovib lisada laulu. Seejärel on võimalik lisada albumi loendisse laule.
 
 -Programm siis küsib, kas kasutaja soovib näha albumite nimekirja, kui vastus on jah, siis näitab programm tervet albumite nimekirja.
