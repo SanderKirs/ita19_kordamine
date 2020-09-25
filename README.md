@@ -15,3 +15,4 @@ Programmi kasutamine on väga lihtne:</br>
 # Programmi kirjutasid
 Ruuben Jalasto</br>
 Sander Kirs</br>
+Kristian Kuiv</br>
