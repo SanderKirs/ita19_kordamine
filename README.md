@@ -15,4 +15,4 @@ Programmi kasutamine on väga lihtne:</br>
 # Programmi kirjutasid
 Ruuben Jalasto([Repo](https://github.com/Bonedew/ita19_kordamine))</br>
 Sander Kirs ([Repo](https://github.com/SanderKirs/ita19_kordamine))</br>
-Kristian Kuiv(**Repo puudub**)</br>
+Kristian Kuiv([Repo](https://github.com/kristiankuiv/ita19_kordamine))</br>
