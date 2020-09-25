@@ -1,7 +1,7 @@
 #Importime teistest failidest vajalikud klassid
-from laulu_fail import Laul
-from albumi_fail import Album
-from laulja import Laulja
+from laulud import Laul
+from plaat import Album
+from esitaja import Laulja
 
 #Testime objekti loomist
 laul1 = Laul ("laul 1", "Nublu")
