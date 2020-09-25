@@ -1,7 +1,8 @@
 #impordin teistest failidest kõik vajaliku
-from plaat import *
-from laulud import *
-from esitaja import *
+from plaat import Plaat
+from laulud import Laulud
+from esitaja import Esitaja
+from laul import Laul
 from menüü import loeAlbumid
 
 #küsin kas kasutaja soovib lisada albumit
@@ -39,22 +40,22 @@ if y == "jah":
 fail = open("albumid", encoding="UTF-8")
 albumid = []
 
-#funktsioon, mis poolitab read, lisab esineja, aasta, laulu ja albumi loendisse,
-#ning teeb kriipsud, iga albumi tagant kriipsud koos esineja, aasta, albumi ja lauluga
+#funktsioon, mis poolitab faili ning eristab laulud, artisti, aasta ja laulu nime
+#ning teeb kriipsud, iga albumi tagant koos esineja, aasta, albumi ja lauludega
 def albumiteKriipsud():
     for rida in fail:
         elemendid = rida.split("\t")
-        esineja = esitaja(elemendid[0])
-        album = plaat(elemendid[1])
+        esineja = Esitaja(elemendid[0])
+        album = Plaat(elemendid[1])
         albumid.append(elemendid[1])
         aasta = elemendid[2]
-        laul = laulud(elemendid[3])
+        laul = Laul(elemendid[3], esineja)
         if len(albumid) > 1:
             if albumid[-2] != albumid[-1]:
                 print()
                 print("--------------------------------------------")
                 print()
-        print(esineja.esitajaNimi, album.plaadiNimi, aasta, laul.lauluNimi)
+        print(esineja.esitajaNimi, album.plaadiNimi, aasta, laul.pealkiri)
 
 if y == "jah":
     albumiteKriipsud()
